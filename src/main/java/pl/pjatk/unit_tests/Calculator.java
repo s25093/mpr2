@@ -23,12 +23,9 @@ public class Calculator {
 
     public int multiply(int a, int b) {
         int result = 0;
-        if (a < 0 && b < 0) {
+        if (b < 0) {
             a *= -1;
             b *= -1;
-        } else if (b < 0) {
-            b *= -1;
-            a *= -1;
         }
         for (int i = 1; i <= b; i++) {
                 result += a;
